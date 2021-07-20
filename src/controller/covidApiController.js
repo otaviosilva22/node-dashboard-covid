@@ -13,7 +13,7 @@ class CovidApiController{
             method: 'get',
             url: 'https://api.brasil.io/v1/dataset/covid19/caso_full/data/?city='+nomeCidade+'&is_repeated=False',
             headers: { 
-              'Authorization': 'Token 8e37d50fedd60c7af5be3ca866445d89c949620b', 
+              'Authorization': 'Token <seu-token>', 
               'Content-Type': 'application/json'
             }
         };
