@@ -47,10 +47,10 @@ function consultaCidade(){
                 },
                 400:(response)=>{
                     alert("Cidade inválida");
-                },
-                500:(response)=>{
-                    alert("Server failed");
                 }
+            },
+            error: function(){
+                alert ("Falha no servidor")
             }
         });
     }

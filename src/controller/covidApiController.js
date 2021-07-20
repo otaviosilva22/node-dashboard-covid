@@ -6,6 +6,13 @@ class CovidApiController{
 
     async casos_full(req, res){
 
+
+        if (req.query.city == "" || req.query.city == null){
+            return res.status(404).json({
+                "error": "Ausência campo city"
+            })
+        }
+
         var nomeCidade = req.query.city;
 
         

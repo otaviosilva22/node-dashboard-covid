@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <!-- Tags meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Title -->
+        <title>Covid Dashboard Brasil</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- JavaScript -->
+        <script src="../scripts/script.js"></script>  
+    </head>
+    <body>
+
+        <section class="container-fluid" id="menu">
+            <div class="row justify-content-center align-items-center">
+                <div>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">DADOS</a></li>
+                        <li><a href="">SOBRE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="main">
+            <div class="row justify-content-center align-items-center">
+                <div class='col-md-7'>
+                    <div id="titleDash" class="text-center"><h1> Dashboard Covid-19: cidades brasileiras</h1></div>
+                    <div class="form-group">
+                        <label for="nomeCidade">Nome da Cidade:</label>
+                        <input type="text" class="form-control" placeholder="Ex: São Paulo" id="nomeCidade">
+                    </div>
+                    <button onclick="consultaCidade()" type="submit" class="btn btn-primary">Pesquisar</button>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid" id="dash">
+            <div class="row justify-content-center align-items-center">
+                <div class='col-md-4'>
+                    <div class="chartLib">
+                        <br>
+                        <canvas class="canvasChart" id="last_available_confirmed" width="400" height="300"></canvas>
+                        <br>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div class="chartLib">
+                        <br>
+                        <canvas class="canvasChart" id="deaths" width="400" height="300"></canvas>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center" style="margin-top: 15px;">
+                <div class='col-md-4'>
+                    <div class="chartLib">
+                        <br>
+                        <canvas class="canvasChart" id="new_confirmed" width="400" height="300"></canvas>
+                        <br>
+                    </div>
+                </div>
+                <div class='col-md-4'>
+                    <div class="chartLib">
+                        <br>
+                        <canvas class="canvasChart" id="media_populacao_contaminada" width="400" height="300"></canvas>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid">
+            <div class='row'>
+                <div class="col-md-12">
+                    <div class="text-center"><p>© Copyright 2021 Otávio Silva, Marcos Andrade, Brian Arruk e Rafael Freitas</p></div>
+                </div>
+            </div>
+        </footer>
+        
+
+    </body>
+</html>
