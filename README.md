@@ -1,5 +1,5 @@
 # Dashboard Covid-19: cidades brasileiras
-### Aplicação desenvolvida com Node.js para consumo de API sobre Covid-19 e exebição por meio de gráficos da biblioteca Chart.js.
+### Aplicação desenvolvida com Node.js para consumo de API sobre Covid-19 e exibição por meio de gráficos da biblioteca Chart.js.
 
 ## Tecnologias Utilizadas
 - [Node.js](https://nodejs.org/en/)
