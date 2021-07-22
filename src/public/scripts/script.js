@@ -11,7 +11,7 @@ function consultaCidade(){
     var nomeCidade = $("#nomeCidade").val();
 
     if (nomeCidade == ""){
-        alert("Nome de cidade incorreta");
+        alert("Por favor, digite o nome da cidade!");
     }else{
         $.ajax({
             method: "GET",
@@ -44,13 +44,10 @@ function consultaCidade(){
                     chartNewConfirmed(new_confirmed, last_available_date);
                     chartDeaths(last_available_deaths, last_available_date);
                     chartLastAvailableConfirmed(last_available_confirmed, last_available_date);
-                },
-                400:(response)=>{
-                    alert("Cidade inválida");
                 }
             },
             error: function(){
-                alert ("Falha no servidor")
+                alert ("Falha na requisição")
             }
         });
     }
@@ -198,7 +195,7 @@ function chartMediaPopulacao(new_confirmed,last_available_date){
         data: {
             labels: last_available_date,
             datasets: [{
-                label: 'População / População Contaminada',
+                label: 'População / População contaminada',
                 data: new_confirmed,
                 backgroundColor: [
                     'rgba(153, 102, 255, 0.2)',
