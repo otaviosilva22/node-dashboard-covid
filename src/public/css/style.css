@@ -11,6 +11,7 @@ html, body{
 }
 
 ul{
+    padding: 0px;
     margin-top: 30px;
     list-style: none;
 }
@@ -59,15 +60,16 @@ h1{
 }
 
 .imgBrasil{
-    margin: 10px;
-    width: 400px;
+    width: 90%;
+    margin-left: 5%;
 }
 
+/*
 .textSide{  
     background-color: white;
     border-radius: 10px;
 }
-
+*/
 .redesSociais{
     list-style: none;
     padding: 0;
