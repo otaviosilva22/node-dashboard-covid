@@ -60,14 +60,17 @@ h1{
 
 .imgBrasil{
     margin: 10px;
-    width: 350px;
+    width: 400px;
 }
 
-.textSide{
-    width: 600px;
-    height: 540px;
+.textSide{  
     background-color: white;
     border-radius: 10px;
+}
+
+.redesSociais{
+    list-style: none;
+    padding: 0;
 }
 
 .textSide h1{  
