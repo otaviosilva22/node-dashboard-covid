@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <!-- Tags meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <!-- Title -->
+        <title>Contato</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <!-- jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- JavaScript -->
+        <script src="../scripts/script.js"></script>  
+    </head>
+    <body>
+        <div class="geral">
+        <section class="container-fluid" id="menu">
+            <div class="row justify-content-center align-items-center">
+                <div>
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./dados.html">DADOS</a></li>
+                        <li><a href="./sobre.html">SOBRE</a></li>
+                        <li><a href="./contato.html">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="main">
+            <div style="background-color: white;border-radius: 10px; box-shadow: 0 0 5px 0px black;" class="row justify-content-center">
+                <div class='col-md-6 col-10'>
+                    <div class="textSide">
+                        <h1><b> Desenvolvedores </b></h1>
+                    </div>
+                    <div class="img_devs text-center" style="margin-bottom: 40px;">
+                        <table style=" width: 100%;">
+                            <tr>
+                                <td class="text-center">
+                                    <a href="https://github.com/otaviosilva22"><img src="../images/img_otavio.png"></a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="https://github.com/RafaelFreitas05"><img src="../images/img_rafael.jpg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    Otávio
+                                </td>
+                                <td class="text-center">
+                                    Rafael
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <a href="https://github.com/MarcosP-Andrade"><img src="../images/img_marcos.jpg"></a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="https://github.com/Brian-Arruk"><img src="../images/img_brian.jpg"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    Marcos
+                                </td>
+                                <td class="text-center">
+                                    Brian
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class='col-md-5 col-10'>
+                    <div class="textSide" style="margin-bottom: 50px ;">
+                        <h1><b>Formulário de Contato</b></h1>                     
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="" class="form-control" placeholder="Ex: jose.marcos@gmail.com" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="" class="form-control" placeholder="Ex: José Marcos" id="nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" >Mensagem:</label>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                        <button type="submit" onclick="writeFile()" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="container-fluid">
+            <div class='row'>
+                <div class="col-12">
+                    <div class="text-center"><p>© Copyright 2021 Otávio Silva, Marcos Andrade, Brian Arruk e Rafael Freitas</p></div>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+    </body>
+</html>

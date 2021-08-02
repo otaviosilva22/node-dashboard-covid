@@ -225,3 +225,29 @@ function chartMediaPopulacao(new_confirmed,last_available_date){
         }
     });
 }
+
+function writeFile(){
+    
+    var name = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var text = document.getElementById("comment");
+    var message = text.value;
+    $.ajax({
+        method: "POST",
+        url: "http://localhost:3333/writeTempFile", //rota get para leitura de comentários
+        dataType: 'json',
+        data: { name, email, message},    
+        statusCode:{ //tratando respostas
+            201:(response)=>{
+                alert ("Mensagem enviada com sucesso!");
+                
+            },
+            400:(response)=>{
+                alert ("Erro! Por favor, preencha todos os campos!");
+            },
+            500:(response)=>{
+                alert("Erro! Tente novamente mais tarde");
+            }
+        }
+    });
+}
