@@ -41,7 +41,7 @@ node server.js
 
 ## Autores
 
-<b>Otávio Silva</b>
-<b>Brian Arruk</b>
-<b>Marcos Andrade</b>
+<b>Otávio Silva</b><br>
+<b>Brian Arruk</b><br>
+<b>Marcos Andrade</b><br>
 <b>Rafael Freitas</b>
