@@ -25,6 +25,7 @@ function consultaCidade(){
                     var last_available_deaths = [];
                     var new_confirmed = [];
                     var media_populacao_contaminada = [];
+                    var new_deaths = [];
 
                     response.results.forEach(element => {
                         console.log(element);
@@ -33,14 +34,15 @@ function consultaCidade(){
                         last_available_date.push(element.last_available_date);
                         last_available_deaths.push(element.last_available_deaths);
                         media_populacao_contaminada.push(element.estimated_population / element.last_available_confirmed);
-                        
+                        new_deaths.push(element.new_deaths);
                     });
                     media_populacao_contaminada = media_populacao_contaminada.reverse();
+                    new_deaths = new_deaths.reverse();
                     new_confirmed = new_confirmed.reverse();
                     last_available_deaths = last_available_deaths.reverse();
                     last_available_date =  last_available_date.reverse();
                     last_available_confirmed = last_available_confirmed.reverse();
-                    chartMediaPopulacao(media_populacao_contaminada, last_available_date);
+                    chartNewDeaths(new_deaths, last_available_date);
                     chartNewConfirmed(new_confirmed, last_available_date);
                     chartDeaths(last_available_deaths, last_available_date);
                     chartLastAvailableConfirmed(last_available_confirmed, last_available_date);
@@ -183,9 +185,9 @@ function chartNewConfirmed(new_confirmed,last_available_date){
     });
 }
 
-function chartMediaPopulacao(new_confirmed,last_available_date){
+function chartNewDeaths(new_confirmed,last_available_date){
     
-    var ctx = document.getElementById('media_populacao_contaminada').getContext('2d');
+    var ctx = document.getElementById('new_deaths').getContext('2d');
     
     if (myChart4!=null){
         myChart4.destroy();
@@ -195,7 +197,7 @@ function chartMediaPopulacao(new_confirmed,last_available_date){
         data: {
             labels: last_available_date,
             datasets: [{
-                label: 'População / População contaminada',
+                label: 'Novas mortes',
                 data: new_confirmed,
                 backgroundColor: [
                     'rgba(153, 102, 255, 0.2)',
