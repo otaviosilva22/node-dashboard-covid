@@ -93,11 +93,23 @@ h1{
 }
 
 /*Formatação página de contatos*/
+.row{
+    margin: 1px;
+}
+
+tr{
+    width: 100%;
+}
+
+td{
+    width: 50%;
+}
+
 .img_devs img{
     width: 80%;
     height: 40%;
     padding: 20px;
-    border-radius: 20%;
+    border-radius: 30%;
 }
 
 .img_devs img:hover{
