@@ -19,7 +19,7 @@ class MessagesController{
             })
         }
 
-        fs.appendFile('../src/temp/messages.csv', someData+"\r\n", (err) => {
+        fs.appendFile('../src/temp/messages.csv', "\r\n"+someData, (err) => {
             if (err) throw err;
         });
 
