@@ -9,7 +9,7 @@
 
 ## O Projeto
 
-### Este projeto está relacionado a disciplina de Interação Humano-Computador, sendo abordado todos os critérios egonômicos nas interfaces.
+### Este projeto está relacionado a disciplina de Interação Humano-Computador, sendo abordado todos os processos de prototipação e também critérios egonômicos.
 
 ## API <a href="https://brasil.io/home/">Brasil.io</a>
 
@@ -41,7 +41,7 @@ node server.js
 
 ## Autores
 
-### <b>Otávio Silva</b>
-### <b>Brian Arruk</b>
-### <b>Marcos Andrade</b>
-### <b>Rafael Freitas</b>
+<b>Otávio Silva</b>
+<b>Brian Arruk</b>
+<b>Marcos Andrade</b>
+<b>Rafael Freitas</b>
